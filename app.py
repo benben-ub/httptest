@@ -13,5 +13,5 @@ def get():
     print(re.text)
     print(re.content)
 
-
-app.run()
+if __name__=='__main__':
+    app.run()
