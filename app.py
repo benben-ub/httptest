@@ -5,10 +5,10 @@ app=Flask(__name__)
 @app.route('/')
 def lala():
     return "helloben"
-@app.route("/lala",methods=["GET"])
+@app.route("/lala",methods=["POST"])
 def get():
     url="https://httptest1977.herokuapp.com/lala"
-    re=requests.get(url)
+    re=requests.post(url)
     print(re.url)
     print(re.text)
     print(re.content)
