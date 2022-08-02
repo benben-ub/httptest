@@ -9,9 +9,9 @@ def lala():
 def get():
     url="https://httptest1977.herokuapp.com/lala"
     re=requests.post(url)
-    print(re.url)
-    print(re.text)
-    print(re.content)
+    print('re.url',re.url)
+    print('@@@re.text###',re.text)
+    print('@@@re.content@@@',re.content)
 
 if __name__=='__main__':
     app.run()
