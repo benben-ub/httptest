@@ -7,7 +7,7 @@ def lala():
     return "helloben"
 @app.route("/lala",methods=["GET"])
 def get():
-    url="http://127.0.0.1:5000/lala"
+    url="https://httptest1977.herokuapp.com/lala"
     re=requests.get(url)
     print(re.url)
     print(re.text)
